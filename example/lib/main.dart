@@ -95,12 +95,16 @@ class _MyHomePageState extends State<MyHomePage> {
           initialProgress: 0.5, // Start at 50%
           width: 350,
           height: 12,
-          backgroundColor: const Color(0xff003266),
-          progressColor: const Color(0xff8aaed4),
+          markerCount: 6,
+          showTooltip: true,
+          showMarkers: true,
+          enableHapticFeedback: true,
+          backgroundColor: const Color(0xffC9CACD),
+          progressColor: const Color(0xff2B6BB0),
           borderRadius: 10,
           handleWidget: const CommonImageView(
             height: 40,
-            svgPath: "assets/images/moon.svg",
+            svgPath: "assets/images/star.svg",
           ), // Custom handle
           isDraggable: true,
           onProgressChanged: (value) {
